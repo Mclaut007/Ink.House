@@ -1,0 +1,57 @@
+/* @font-face {
+  font-family: "Europa";
+  src:
+    url("./../fonts/europa.woff2") format("woff2"),
+    url("./../fonts/europa.woff") format("woff");
+}
+@font-face {
+  font-family: "Gloss-And-Bloom";
+  src:
+    url("./../fonts/gloss-and-bloom.woff2") format("woff2"),
+    url("./../fonts/gloss-and-bloom.woff") format("woff");
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    @apply font-['Europa'] font-normal text-base text-gray1 leading-[1.6875rem];
+  }
+} */
+
+/* @layer components {
+  .container {
+    @apply max-w-[71.25rem] min-w-80;
+  }
+  .wrapper {
+    @apply overflow-hidden flex flex-col min-h-full;
+  }
+  .main {
+    @apply grow;
+  }
+  .heading2 {
+    @apply font-bold text-[2.75rem] leading-[1.3] text-blue1 lg:text-[2.5rem] md:text-4xl sm:text-[2rem] tracking-wide;
+  }
+  .button {
+    @apply border border-red1 bg-red1 flex justify-center items-center w-fit text-white text-center select-none transition font-bold text-base leading-normal rounded-[0.38rem] py-3 px-8 min-h-[3.25rem];
+  }
+  .button_transparent {
+    @apply bg-transparent text-red1;
+  }
+  .button path {
+    @apply transition;
+  }
+  @media (any-hover: hover) and (pointer: fine) {
+    .button:hover {
+      @apply text-red1 bg-transparent;
+    }
+    .button:hover path {
+      @apply stroke-white;
+    }
+    .button_transparent {
+      @apply hover:bg-red1 hover:text-white;
+    }
+  }
+} */
