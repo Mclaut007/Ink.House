@@ -16,7 +16,7 @@ module.exports = {
       mdsm: { max: "42rem" }, // 672px
       sm: { max: "35.99875rem" }, // 575.98px
       xs: { max: "29.99875rem" }, // 479.98px
-      // xsmin: { max: "24rem" }, // 384px
+      xsmin: { max: "24rem" }, // 384px
     },
     container: {
       padding: "0.9375rem", // 15px

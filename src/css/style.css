@@ -958,6 +958,10 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-\[0\.625rem\] {
   margin-bottom: 0.625rem;
 }
@@ -1012,6 +1016,10 @@ body {
   min-width: 100%;
 }
 
+.max-w-\[33\.75rem\] {
+  max-width: 33.75rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1043,6 +1051,12 @@ body {
       flex-wrap: wrap;
 }
 
+.items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .items-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1057,6 +1071,10 @@ body {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-\[1\.875rem\] {
@@ -1101,9 +1119,34 @@ body {
   overflow: hidden;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
+.bg-\[\#EEDB6D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 219 109 / var(--tw-bg-opacity));
+}
+
 .bg-green-light {
   --tw-bg-opacity: 1;
   background-color: rgb(225 237 230 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\/\.\.\/img\/new-collection\/bg\.jpg\'\)\] {
+  background-image: url('./../img/new-collection/bg.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-cover {
@@ -1166,6 +1209,20 @@ body {
   font-weight: 700;
 }
 
+.leading-none {
+  line-height: 1;
+}
+
+.text-\[\#f4f6f5\] {
+  --tw-text-opacity: 1;
+  color: rgb(244 246 245 / var(--tw-text-opacity));
+}
+
+.text-black1 {
+  --tw-text-opacity: 1;
+  color: rgb(44 45 53 / var(--tw-text-opacity));
+}
+
 .text-gray1 {
   --tw-text-opacity: 1;
   color: rgb(134 146 139 / var(--tw-text-opacity));
@@ -1174,6 +1231,11 @@ body {
 .text-green-dark {
   --tw-text-opacity: 1;
   color: rgb(89 141 102 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .transition-colors {
@@ -1199,6 +1261,11 @@ body {
 }
 
 @media(hover:hover) and (pointer:fine) {
+  .hover\:bg-\[\#FAEB97\]:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 235 151 / var(--tw-bg-opacity));
+  }
+
   .hover\:bg-green-dark:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(89 141 102 / var(--tw-bg-opacity));
@@ -1209,20 +1276,17 @@ body {
     color: rgb(244 246 245 / var(--tw-text-opacity));
   }
 
+  .hover\:text-black1:hover {
+    --tw-text-opacity: 1;
+    color: rgb(44 45 53 / var(--tw-text-opacity));
+  }
+
   .hover\:underline:hover {
     text-decoration-line: underline;
   }
 
   .hover\:opacity-70:hover {
     opacity: 0.7;
-  }
-
-  .hover\:opacity-80:hover {
-    opacity: 0.8;
-  }
-
-  .hover\:opacity-75:hover {
-    opacity: 0.75;
   }
 }
 
@@ -1257,6 +1321,22 @@ body {
 }
 
 @media (max-width: 58rem) {
+  .lgmd\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .lgmd\:h-\[3\.75rem\] {
+    height: 3.75rem;
+  }
+
+  .lgmd\:w-\[3\.75rem\] {
+    width: 3.75rem;
+  }
+
+  .lgmd\:bg-\[url\(\'\.\/\.\.\/img\/new-collection\/bg-2\.jpg\'\)\] {
+    background-image: url('./../img/new-collection/bg-2.jpg');
+  }
+
   .lgmd\:text-\[2\.5625rem\] {
     font-size: 2.5625rem;
   }
@@ -1285,6 +1365,14 @@ body {
     aspect-ratio: 0.8/1;
   }
 
+  .md\:h-\[3\.125rem\] {
+    height: 3.125rem;
+  }
+
+  .md\:w-\[3\.125rem\] {
+    width: 3.125rem;
+  }
+
   .md\:w-full {
     width: 100%;
   }
@@ -1308,6 +1396,10 @@ body {
   .md\:border-b-\[\#c3d1c6\] {
     --tw-border-opacity: 1;
     border-bottom-color: rgb(195 209 198 / var(--tw-border-opacity));
+  }
+
+  .md\:bg-\[url\(\'\.\/\.\.\/img\/new-collection\/bg-3\.jpg\'\)\] {
+    background-image: url('./../img/new-collection/bg-3.jpg');
   }
 
   .md\:py-0 {
@@ -1479,8 +1571,16 @@ body {
 }
 
 @media (max-width: 29.99875rem) {
+  .xs\:mb-\[1\.875rem\] {
+    margin-bottom: 1.875rem;
+  }
+
   .xs\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .xs\:bg-\[url\(\'\.\/\.\.\/img\/new-collection\/bg-4\.jpg\'\)\] {
+    background-image: url('./../img/new-collection/bg-4.jpg');
   }
 
   .xs\:pt-\[11\.875rem\] {
@@ -1494,5 +1594,11 @@ body {
 
   .xs\:text-\[0\.875rem\] {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 24rem) {
+  .xsmin\:w-full {
+    width: 100%;
   }
 }
