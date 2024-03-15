@@ -1,26 +1,39 @@
+// Поместим этот файл и в финальную папку с файлами сайта, чтобы не потерялся.
+
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: "selector",
   theme: {
     screens: {
-      xl: { max: "71.25rem" }, // 1140px
-      lg: { max: "62rem" }, // 992px
-      md: { max: "48rem" }, // 768px
-      sm: { max: "36rem" }, // 576px
-      xs: { max: "30rem" }, // 480px
+      1200: { max: "75rem" }, // 1200px
+      xl: { max: "71.24875rem" }, // 1139.98
+      lg: { max: "61.99875rem" }, // 991.98px
+      lgmd: { max: "58rem" }, // 928px
+      md: { max: "47.99875rem" }, // 767.98px
+      mdsm: { max: "42rem" }, // 672px
+      sm: { max: "35.99875rem" }, // 575.98px
+      xs: { max: "29.99875rem" }, // 479.98px
+      // xsmin: { max: "24rem" }, // 384px
     },
     container: {
       padding: "0.9375rem", // 15px
       center: true,
     },
     extend: {
-      // colors: {
-      //   blue1: "#1a2578",
-      //   red1: "#bf0830;",
-      //   gray1: "#484c63",
-      // },
+      colors: {
+        black1: "#2C2D35",
+        "green-dark": "#598D66",
+        "green-light": "#E1EDE6",
+        gray1: "#86928B",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("hover", "@media(hover:hover) and (pointer:fine){&:hover}");
+    }),
+  ],
 };

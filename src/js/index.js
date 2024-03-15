@@ -50,12 +50,6 @@
 //   document.body.classList.add("_pc");
 // }
 
-// ========== Маска для телефона (поля input) на JS ========== //
-
-// Работает для инпутов с классом tel
-
-// import inputPhoneMask from "./modules/input-phone-mask.js";
-
 // ========== Плагин Imaskjs (маска для телефона) ========== //
 
 // import inputPhoneIMask from "./modules/imask";
@@ -63,12 +57,6 @@
 // inputPhoneIMask();
 
 // import inputPhoneMask from "./modules/input-phone-mask.js";
-
-// ============= Меню-бургер ============= //
-
-// import headerBurgerMenu from "./modules/header-burger-menu";
-
-// headerBurgerMenu();
 
 // ==================== Popup-окно ===================== //
 
@@ -83,3 +71,20 @@
 // import showHideFixedHeader from "./modules/hide-show-fixed-header";
 
 // showHideFixedHeader();
+
+// ============= Меню-бургер ============= //
+
+// import headerBurgerMenu from "./modules/header-burger-menu";
+
+// headerBurgerMenu();
+
+import burgerMenu from "./modules/tailwind-burger-menu";
+
+burgerMenu();
+
+// ============= Репродукции (фильтр по странам) ============= //
+// По нажатию кнопки меняем, репродукции на картины английскиих, немецких или французских авторов показывать.
+
+import reproductionsChangeCountries from "./modules/reproductions-change-countries";
+
+reproductionsChangeCountries();
