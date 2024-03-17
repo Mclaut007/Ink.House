@@ -88,3 +88,9 @@ burgerMenu();
 import reproductionsChangeCountries from "./modules/reproductions-change-countries";
 
 reproductionsChangeCountries();
+
+// Перемещаем логотип футера на расширении 480px
+
+import moveFooterLogo from "./modules/footer-logo-move";
+
+moveFooterLogo();
